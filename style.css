@@ -21,7 +21,7 @@ main {
 
 .container_top {
     width: 18vw;
-    margin: 30px auto auto auto;
+    margin: 50px auto auto auto;
 }
 
 .container_bottom {
@@ -29,8 +29,8 @@ main {
     background-size: cover;
     background-position: center;
     border-radius: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     width: 90%;
     border: 1px solid #772FD3
 }
@@ -72,7 +72,7 @@ select {
 }
 
 .paragrafo_3 {
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
