@@ -25,7 +25,7 @@ main {
 }
 
 .container_bottom {
-    background-image: url(img/logo.gif);
+    background-image: linear-gradient(rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)), url(img/logo.gif);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
