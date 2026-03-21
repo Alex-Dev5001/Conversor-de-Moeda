@@ -5,34 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <img src="img/logo.gif" alt="logo-conversor">
+
     <main>
 
-        <p>Conversor de</p>
+        <div class="container_top">
 
-        <select>
-            <option>R$ Real brasileiro</option>
-            <option>US$ Dólar americano</option>
-            <option>€ Euro</option>
-        </select>
+            <p class="paragrafo_1">Conversor de</p>
 
-        <p>Converter para</p>
-        <select>
-            <option>R$ Real brasileiro</option>
-            <option>US$ Dólar americano</option>
-            <option>€ Euro</option>
-        </select>
+            <select>
+                <option>R$ Real brasileiro</option>
+                <option>US$ Dólar americano</option>
+                <option>€ Euro</option>
+                <option>BTC Bitcoin</option>
+            </select>
 
-        <p>Valor</p>
-        <input type="text" disabled>
+            <p class="paragrafo_2">Converter para</p>
+            <select>
+                <option>R$ Real brasileiro</option>
+                <option>US$ Dólar americano</option>
+                <option>€ Euro</option>
+                <option>BTC Bitcoin</option>
+            </select>
 
-        <button>Converter</button>
+            <p class="paragrafo_3">Valor</p>
+            <input class="input_value" type="price" placeholder="Digite o valor a ser convertido">
+            <button>Converter</button>
+        </div>
+        <div class="container_bottom">
+          
+            <div class="flags">
+                <img src="img/brasil 2.png" alt="brazil_flag">
+                <p class="paragrafo_4">Real</p>
+                <input class="input_value_brazil" type="price" disabled>
+            </div>
 
-        <div>
-
+            <div class="flags">
+                <img src="img/estados-unidos (1) 1.png" alt="eua_flag">
+                <p class="paragrafo_5">Dólar Americano</p>
+                <input class="input_value_eua" type="price" disabled>
+            </div>
         </div>
     </main>
 </body>
