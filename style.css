@@ -120,9 +120,9 @@ select {
 }
 
 .input_value_brazil {
+    text-align: center;
     border: none;
     width: 100%;
-    padding-left: 10px;
     color: #555555;
     font-weight: 700;
     font-size: 12px;
@@ -133,9 +133,9 @@ select {
 }
 
 .input_value_eua {
+    text-align: center;
     border: none;
     width: 100%;
-    padding-left: 10px;
     color: #555555;
     font-weight: 700;
     font-size: 12px;
