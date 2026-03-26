@@ -152,6 +152,7 @@ select {
 }
 
 button {
+    cursor: pointer;
     height: 30px;
     border-radius: 5px;
     margin-top: 10px;
@@ -159,6 +160,11 @@ button {
     box-shadow: 0px 3px 3px 0px #00000040;
     border: none;
     background-color: #772FD3;
+}
+
+button:active {
+    background-color: #5e23a8;
+    transform: scale(0.99);
 }
 
 .vector {
