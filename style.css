@@ -8,6 +8,8 @@ body {
     display: grid;
     justify-content: center;
     background-color: #8b51fe;
+    width: 100%;
+    height: 100vh;
 }
 
 main {
@@ -17,14 +19,16 @@ main {
     display: grid;
     justify-items: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h1 {
     margin-top: 10px;
     text-align: center;
 }
+
 .container_top {
-    width: 18vw;
+    width: 80%;
     margin: 50px auto auto auto;
 }
 
@@ -39,7 +43,8 @@ h1 {
     border: 1px solid #772FD3
 }
 
-.currency, .currency-converted {
+.currency,
+.currency-converted {
     color: #555555;
     height: 30px;
     top: 68px;
@@ -171,4 +176,79 @@ button:active {
     display: flex;
     margin: 15px auto auto auto;
     width: 30px;
+}
+
+@media (max-width: 1000px) {
+    main {
+        background-color: #ffffff;
+        border-radius: 15px;
+        width: 32vw;
+        display: grid;
+        justify-items: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 920px) {
+    main {
+        background-color: #ffffff;
+        border-radius: 15px;
+        width: 32vw;
+        display: grid;
+        justify-items: center;
+        margin-top: 10px;
+    }
+
+    .container_top {
+        width: 80%;
+        margin: 15px auto auto auto;
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        background-color: #ffffff;
+        border-radius: 15px;
+        width: 44vw;
+        display: grid;
+        justify-items: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    main {
+        background-color: #ffffff;
+        border-radius: 15px;
+        width: 55vw;
+        display: grid;
+        justify-items: center;
+        margin-top: 10px;
+        height: 97vh;
+    }
+
+    .container_top {
+        width: 80%;
+        margin: 15px auto auto auto;
+    }
+
+    @media (max-width: 420px) {
+        main {
+            background-color: #ffffff;
+            border-radius: 15px;
+            width: 95vw;
+            display: grid;
+            justify-items: center;
+            margin-top: 10px;
+            height: 97vh;
+        }
+
+        .container_top {
+            width: 80%;
+            margin: 15px auto auto auto;
+        }
+    }
+
+
+
 }
