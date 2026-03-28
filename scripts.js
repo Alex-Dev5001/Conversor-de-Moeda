@@ -13,6 +13,10 @@ function clickConverter() {
                 ("pt-BR", { style: "currency", currency: "BRL" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("pt-BR", { style: "currency", currency: "BRL" }).format(inputValue.value / 1);
+            document.querySelector(".img-1").src = "img/brasil 2.png";
+            document.querySelector(".img-2").src = "img/brasil 2.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Real";
+            document.querySelector(".paragrafo_5").innerHTML = "Real";
         }
 
         if (inputCurrency.value == "dolar") {
@@ -20,6 +24,10 @@ function clickConverter() {
                 ("en-US", { style: "currency", currency: "USD" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("en-US", { style: "currency", currency: "USD" }).format(inputValue.value / 1);
+            document.querySelector(".img-1").src = "img/estados-unidos (1) 1.png";
+            document.querySelector(".img-2").src = "img/estados-unidos (1) 1.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Dólar";
+            document.querySelector(".paragrafo_5").innerHTML = "Dólar";
         }
 
         if (inputCurrency.value == "euro") {
@@ -27,11 +35,19 @@ function clickConverter() {
                 ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value / 1);
+            document.querySelector(".img-1").src = "img/euro.png";
+            document.querySelector(".img-2").src = "img/euro.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Euro";
+            document.querySelector(".paragrafo_5").innerHTML = "Euro";
         }
 
         if (inputCurrency.value == "bitcoin") {
             document.querySelector(".input_value_1").value = `BTC ${inputValue.value / 1}`;
             document.querySelector(".input_value_2").value = `BTC ${inputValue.value / 1}`;
+            document.querySelector(".img-1").src = "img/bitcoin.png";
+            document.querySelector(".img-2").src = "img/bitcoin.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Bitcoin";
+            document.querySelector(".paragrafo_5").innerHTML = "Bitcoin";
         }
 
     }
@@ -43,6 +59,10 @@ function clickConverter() {
                 ("pt-BR", { style: "currency", currency: "BRL" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("en-US", { style: "currency", currency: "USD" }).format(inputValue.value * cambioBrlDolar);
+            document.querySelector(".img-1").src = "img/brasil 2.png";
+            document.querySelector(".img-2").src = "img/estados-unidos (1) 1.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Real";
+            document.querySelector(".paragrafo_5").innerHTML = "Dólar";
         }
 
         if (inputCurrencyConverted.value == "euro") {
@@ -50,12 +70,20 @@ function clickConverter() {
                 ("pt-BR", { style: "currency", currency: "BRL" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value * cambioBrlEuro);
+            document.querySelector(".img-1").src = "img/brasil 2.png";
+            document.querySelector(".img-2").src = "img/euro.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Real";
+            document.querySelector(".paragrafo_5").innerHTML = "Euro";
         }
 
         if (inputCurrencyConverted.value == "bitcoin") {
             document.querySelector(".input_value_1").value = Intl.NumberFormat
                 ("pt-BR", { style: "currency", currency: "BRL" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = `BTC ${inputValue.value / bitcoinToday}`;
+            document.querySelector(".img-1").src = "img/brasil 2.png";
+            document.querySelector(".img-2").src = "img/bitcoin.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Real";
+            document.querySelector(".paragrafo_5").innerHTML = "Bitcoin";
         }
     }
 
@@ -66,6 +94,10 @@ function clickConverter() {
                 ("en-US", { style: "currency", currency: "USD" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("pt-BR", { style: "currency", currency: "BRL" }).format(inputValue.value / cambioBrlDolar);
+            document.querySelector(".img-1").src = "img/estados-unidos (1) 1.png";
+            document.querySelector(".img-2").src = "img/brasil 2.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Dólar";
+            document.querySelector(".paragrafo_5").innerHTML = "Real";
         }
 
         if (inputCurrencyConverted.value == "euro") {
@@ -73,12 +105,20 @@ function clickConverter() {
                 ("en-US", { style: "currency", currency: "USD" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value / cambioDolarEuro);
+            document.querySelector(".img-1").src = "img/estados-unidos (1) 1.png";
+            document.querySelector(".img-2").src = "img/euro.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Dólar";
+            document.querySelector(".paragrafo_5").innerHTML = "Euro";
         }
 
         if (inputCurrencyConverted.value == "bitcoin") {
             document.querySelector(".input_value_1").value = Intl.NumberFormat
                 ("en-US", { style: "currency", currency: "USD" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = `BTC ${inputValue.value / cambioBrlDolar / bitcoinToday}`;
+            document.querySelector(".img-1").src = "img/estados-unidos (1) 1.png";
+            document.querySelector(".img-2").src = "img/bitcoin.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Dólar";
+            document.querySelector(".paragrafo_5").innerHTML = "Bitcoin";
         }
     }
 
@@ -89,6 +129,10 @@ function clickConverter() {
                 ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("pt-BR", { style: "currency", currency: "BRL" }).format(inputValue.value / cambioBrlEuro);
+            document.querySelector(".img-1").src = "img/euro.png";
+            document.querySelector(".img-2").src = "img/brasil 2.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Euro";
+            document.querySelector(".paragrafo_5").innerHTML = "Real";
         }
 
         if (inputCurrencyConverted.value == "dolar") {
@@ -96,12 +140,20 @@ function clickConverter() {
                 ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("en-US", { style: "currency", currency: "USD" }).format(inputValue.value * cambioDolarEuro);
+            document.querySelector(".img-1").src = "img/euro.png";
+            document.querySelector(".img-2").src = "img/estados-unidos (1) 1.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Euro";
+            document.querySelector(".paragrafo_5").innerHTML = "Dólar";
         }
 
         if (inputCurrencyConverted.value == "bitcoin") {
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value / 1);
             document.querySelector(".input_value_2").value = `BTC ${inputValue.value / cambioBrlEuro / bitcoinToday}`;
+            document.querySelector(".img-1").src = "img/euro.png";
+            document.querySelector(".img-2").src = "img/bitcoin.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Euro";
+            document.querySelector(".paragrafo_5").innerHTML = "Bitcoin";
         }
     }
 
@@ -112,6 +164,10 @@ function clickConverter() {
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("pt-BR", { style: "currency", currency: "BRL" })
                 .format(inputValue.value * bitcoinToday);
+            document.querySelector(".img-1").src = "img/bitcoin.png";
+            document.querySelector(".img-2").src = "img/brasil 2.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Bitcoin";
+            document.querySelector(".paragrafo_5").innerHTML = "Real";
         }
 
         if (inputCurrencyConverted.value == "dolar") {
@@ -119,13 +175,21 @@ function clickConverter() {
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("en-US", { style: "currency", currency: "USD" })
                 .format(inputValue.value * bitcoinToday * cambioBrlDolar);
+            document.querySelector(".img-1").src = "img/bitcoin.png";
+            document.querySelector(".img-2").src = "img/estados-unidos (1) 1.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Bitcoin";
+            document.querySelector(".paragrafo_5").innerHTML = "Dólar";
         }
 
         if (inputCurrencyConverted.value == "euro") {
-            document.querySelector(".input_value_1").value = `BTC ${inputValue.value / inputValue * 1}`;
+            document.querySelector(".input_value_1").value = `BTC ${inputValue.value * 1}`;
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("fr-FR", { style: "currency", currency: "EUR" })
                 .format(inputValue.value * bitcoinToday * cambioBrlEuro);
+            document.querySelector(".img-1").src = "img/bitcoin.png";
+            document.querySelector(".img-2").src = "img/euro.png";
+            document.querySelector(".paragrafo_4").innerHTML = "Bitcoin";
+            document.querySelector(".paragrafo_5").innerHTML = "Euro";
         }
     }
 
@@ -133,13 +197,10 @@ function clickConverter() {
 
 
 
-
 const converterButton = document.querySelector(".converter-button");
 converterButton.addEventListener("click", clickConverter);
 const inputCurrency = document.querySelector(".currency");
 const inputCurrencyConverted = document.querySelector(".currency-converted");
-
-
 
 
 
