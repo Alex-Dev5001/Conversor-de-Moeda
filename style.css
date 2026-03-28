@@ -178,7 +178,24 @@ button:active {
     width: 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1030px) and (min-height: 780px) {
+    main {
+        margin: auto;
+        background-color: #ffffff;
+        border-radius: 15px;
+        width: 60vw;
+        display: grid;
+        justify-items: center;
+        height: 60vh;
+    }
+
+    .container_top {
+        width: 80%;
+        margin: 15px auto auto auto;
+    }
+}
+
+@media (max-width: 1000px) and (max-height: 770px) {
     main {
         background-color: #ffffff;
         border-radius: 15px;
@@ -189,11 +206,11 @@ button:active {
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 920px) and (max-height: 770px) {
     main {
         background-color: #ffffff;
         border-radius: 15px;
-        width: 32vw;
+        width: 50vw;
         display: grid;
         justify-items: center;
         margin-top: 10px;
@@ -209,7 +226,7 @@ button:active {
     main {
         background-color: #ffffff;
         border-radius: 15px;
-        width: 44vw;
+        width: 60vw;
         display: grid;
         justify-items: center;
         margin-top: 10px;
@@ -220,7 +237,7 @@ button:active {
     main {
         background-color: #ffffff;
         border-radius: 15px;
-        width: 55vw;
+        width: 80vw;
         display: grid;
         justify-items: center;
         margin-top: 10px;
@@ -248,6 +265,7 @@ button:active {
             margin: 15px auto auto auto;
         }
     }
+
 
 
 

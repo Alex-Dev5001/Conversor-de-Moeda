@@ -195,7 +195,18 @@ function clickConverter() {
 
 }
 
+const boxMain = document.querySelector("main");
+let alturaJanela = window.screen.height;
+console.log(alturaJanela);
+let larguraJanela = window.screen.width;
+console.log(larguraJanela);
 
+if (alturaJanela > 700 && larguraJanela < 380) {
+    boxMain.style.backgroundColor = "blue"
+    boxMain.style.width = "80vw"
+    boxMain.style.margin = "auto"
+    boxMain.style.height = "67vh"
+}
 
 const converterButton = document.querySelector(".converter-button");
 converterButton.addEventListener("click", clickConverter);
