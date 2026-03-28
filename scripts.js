@@ -136,8 +136,8 @@ function clickConverter() {
         }
 
         if (inputCurrencyConverted.value == "dolar") {
-            document.querySelector(".input_value_2").value = Intl.NumberFormat
-                ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value / 1);
+            document.querySelector(".input_value_1").value = Intl.NumberFormat
+                ("fr-FR", { style: "currency", currency: "EUR" }).format(inputValue.value * 1);
             document.querySelector(".input_value_2").value = Intl.NumberFormat
                 ("en-US", { style: "currency", currency: "USD" }).format(inputValue.value * cambioDolarEuro);
             document.querySelector(".img-1").src = "img/euro.png";
