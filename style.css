@@ -45,6 +45,7 @@ h1 {
 
 .currency,
 .currency-converted {
+    appearance: none;
     color: #555555;
     height: 30px;
     top: 68px;
